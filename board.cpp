@@ -18,6 +18,8 @@ void board::init(int size, int nbActiveCellsAtStart){
     
     this->board = newBoard;
 
+    //random
+    
     for(int i=0; i< nbActiveCellsAtStart; i++){
         int randX = rand() % size; 
         int randY = rand() % size;
@@ -25,12 +27,60 @@ void board::init(int size, int nbActiveCellsAtStart){
 
     }
 
+
+
+    //glider 
     /* 
     board[1][2].setIsActive(true);
     board[2][3].setIsActive(true);
     board[3][1].setIsActive(true);
     board[3][2].setIsActive(true);
     board[3][3].setIsActive(true);
+    */
+
+    //blinker 
+    /*
+    board[4][6].setIsActive(true);
+    board[5][6].setIsActive(true);
+    board[6][6].setIsActive(true);
+    */
+
+    //toad 
+    /*
+    board[5][5].setIsActive(true);
+    board[5][6].setIsActive(true);
+    board[5][7].setIsActive(true);
+    board[6][4].setIsActive(true);
+    board[6][5].setIsActive(true);
+    board[6][6].setIsActive(true);
+    */
+
+    //beacon 
+    /*
+    board[4][4].setIsActive(true);
+    board[4][5].setIsActive(true);
+    board[5][4].setIsActive(true);
+    board[5][5].setIsActive(true);
+
+    board[6][6].setIsActive(true);
+    board[6][7].setIsActive(true);
+    board[7][6].setIsActive(true);
+    board[7][7].setIsActive(true);
+    
+    */
+
+    //LWSS
+    /*
+    board[5][5].setIsActive(true);
+    board[5][6].setIsActive(true);
+    board[6][4].setIsActive(true);
+    board[6][5].setIsActive(true);
+    board[6][6].setIsActive(true);
+    board[6][7].setIsActive(true);
+    board[7][4].setIsActive(true);
+    board[7][7].setIsActive(true);
+    board[8][5].setIsActive(true);
+    board[8][6].setIsActive(true);
     */
 
 
